@@ -1,4 +1,5 @@
-import { Link, Outlet, useRouterState } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import { Home, Sparkles, Trophy, Settings, Flame, Bell } from "lucide-react";
 import { currentUser, leaderboard } from "@/data/challenges";
 
@@ -8,7 +9,7 @@ const navItems = [
   { to: "/leaderboard", label: "Leaderboard", icon: Trophy },
 ];
 
-export function AppShell() {
+export function AppShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   return (
@@ -103,9 +104,7 @@ export function AppShell() {
           </div>
         </header>
 
-        <main className="flex-1 min-w-0">
-          <Outlet />
-        </main>
+        <main className="flex-1 min-w-0">{children}</main>
       </div>
 
       {/* Right leaderboard */}
