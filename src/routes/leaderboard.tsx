@@ -41,7 +41,11 @@ function LeaderboardPage() {
             >
               <span
                 className={`font-mono font-bold ${
-                  u.rank === 1 ? "text-streak" : u.rank <= 3 ? "text-highlight" : "text-muted-foreground"
+                  u.rank === 1
+                    ? "text-streak"
+                    : u.rank <= 3
+                      ? "text-highlight"
+                      : "text-muted-foreground"
                 }`}
               >
                 #{u.rank}

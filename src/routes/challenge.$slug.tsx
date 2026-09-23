@@ -96,7 +96,10 @@ function ChallengeDetail() {
                 Examples
               </h3>
               {challenge.examples.map((ex, i) => (
-                <div key={i} className="rounded-lg bg-background/60 border border-border p-4 font-mono text-xs space-y-2">
+                <div
+                  key={i}
+                  className="rounded-lg bg-background/60 border border-border p-4 font-mono text-xs space-y-2"
+                >
                   <div>
                     <span className="text-muted-foreground">Input: </span>
                     <span className="text-foreground">{ex.input}</span>
@@ -140,9 +143,7 @@ function ChallengeDetail() {
                     <span className="w-2.5 h-2.5 rounded-full bg-warning/70" />
                     <span className="w-2.5 h-2.5 rounded-full bg-success/70" />
                   </div>
-                  <span className="ml-2 text-xs font-mono text-muted-foreground">
-                    solution.js
-                  </span>
+                  <span className="ml-2 text-xs font-mono text-muted-foreground">solution.js</span>
                 </div>
                 <button
                   onClick={() => setCode(challenge.starterCode)}

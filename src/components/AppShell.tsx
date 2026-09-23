@@ -50,7 +50,9 @@ export function AppShell({ children }: { children: ReactNode }) {
         {/* Streak card */}
         <div className="mt-8 p-4 rounded-xl border border-border bg-surface-elevated/50">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">Win Streak</span>
+            <span className="text-xs uppercase tracking-wider text-muted-foreground">
+              Win Streak
+            </span>
             <div className="flex items-center gap-1.5 text-streak font-mono font-bold">
               <Flame className="w-4 h-4 fill-streak/30" />
               <span>{currentUser.streak}</span>

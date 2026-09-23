@@ -19,14 +19,18 @@ export function ChallengeCard({ challenge }: Props) {
     return (
       <div className="relative group rounded-2xl border border-border bg-card/40 p-6 opacity-60 overflow-hidden">
         <div className="absolute top-4 right-4 flex items-center gap-2">
-          <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full border ${difficultyStyles[difficulty]} opacity-60`}>
+          <span
+            className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full border ${difficultyStyles[difficulty]} opacity-60`}
+          >
             {difficulty}
           </span>
           <div className="w-7 h-7 rounded-full bg-success/20 flex items-center justify-center">
             <Check className="w-4 h-4 text-success" strokeWidth={3} />
           </div>
         </div>
-        <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-2">{category}</p>
+        <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-2">
+          {category}
+        </p>
         <h3 className="text-lg font-display font-semibold mb-2 line-through decoration-muted-foreground/40">
           {title}
         </h3>
@@ -54,7 +58,9 @@ export function ChallengeCard({ challenge }: Props) {
       <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-highlight/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
       <div className="absolute top-4 right-4">
-        <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full border ${difficultyStyles[difficulty]}`}>
+        <span
+          className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full border ${difficultyStyles[difficulty]}`}
+        >
           {difficulty}
         </span>
       </div>

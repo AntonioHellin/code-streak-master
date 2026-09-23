@@ -1,6 +1,8 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "code-streak-tracker",
+  "version": "1.0.0",
   "private": true,
+  "license": "UNLICENSED",
   "sideEffects": false,
   "type": "module",
   "scripts": {
