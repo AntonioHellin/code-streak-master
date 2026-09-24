@@ -116,7 +116,3 @@ Deploy directly to Cloudflare edge infrastructure using Wrangler:
 ```bash
 npx wrangler deploy
 ```
-
-## License
-
-Proprietary / All Rights Reserved.
